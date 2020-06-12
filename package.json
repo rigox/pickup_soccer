@@ -1,0 +1,28 @@
+{
+  "name": "pickup_soccer",
+  "version": "1.0.0",
+  "description": "simple crud api that  allows people to  signup to soccer pickup games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rigox/pickup_soccer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rigox/pickup_soccer/issues"
+  },
+  "homepage": "https://github.com/rigox/pickup_soccer#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.18",
+    "morgan": "^1.10.0"
+  }
+}
