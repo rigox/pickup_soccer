@@ -26,11 +26,15 @@ if(process.env.NODE_ENV==="development"){
 
 //load routes
 const auth =  require('./routes/auth')
-
+const game =  require('./routes/game')
+const field =   require('./routes/field')
 //setup routes 
 app.get('/',(req,res)=>{res.send('welcome to futbolito')})
 
 app.use('/api/v1/auth',auth)
+app.use('/api/v1/game',game)
+app.use('/api/v1/field',field)
+
 
 
 //setup errohandler middleware
