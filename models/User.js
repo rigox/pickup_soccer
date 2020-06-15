@@ -52,6 +52,7 @@ userSchema.methods.getSignedJwtToken =  function(){
 //match the user passwords
 userSchema.methods.matchPassword =  async function(enterPass){
       const isMatch =  await bcrypt.compare(enterPass,this.password)
+      return isMatch
 }
 
 module.exports =  mongoose.model('users',userSchema)
