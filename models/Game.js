@@ -10,14 +10,14 @@ name:{
 
 timeScheduled:{
    type:Date,
-   required:[true,"please schedule a time"]
+   required:[true,"please add time game is schedule"]
 },
  
  players:[{type:Schema.ObjectId,ref:'users'}],
  
  averageCost:Number,
- 
-
+  
+ split:Number
 
 
 
