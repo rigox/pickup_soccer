@@ -29,3 +29,19 @@ exports.getFeilds  =  AsyncHandler(async (req,res,next)=>{
             data: fields
        })
 });
+
+
+//@Desc  cancel reservation a field
+//@Route POST  api/v1/field/cancel
+//Access private
+exports.cancelReservation =  AsyncHandler(async(req,res,next)=>{
+
+});
+
+//@Desc  reserves a field
+//@Route POST  api/v1/field/reserver
+//Access private
+exports.reserve =  AsyncHandler(async(req,res,next)=>{
+
+});
+
