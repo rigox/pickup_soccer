@@ -36,6 +36,11 @@ exports.getFeilds  =  AsyncHandler(async (req,res,next)=>{
 //Access private
 exports.cancelReservation =  AsyncHandler(async(req,res,next)=>{
    const field =   await Field.findOne({})
+  
+ if(!field){
+       return res.status(400).json({msg:'resource was not found'})
+ }
+
 });
 
 //@Desc  reserves a field
