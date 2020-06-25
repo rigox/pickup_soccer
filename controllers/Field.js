@@ -41,6 +41,8 @@ exports.cancelReservation =  AsyncHandler(async(req,res,next)=>{
        return res.status(400).json({msg:'resource was not found'})
  }
 
+  res.json({})
+
 });
 
 //@Desc  reserves a field
