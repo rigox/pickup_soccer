@@ -49,6 +49,7 @@ exports.cancelReservation =  AsyncHandler(async(req,res,next)=>{
 //@Route POST  api/v1/field/reserver
 //Access private
 exports.reserve =  AsyncHandler(async(req,res,next)=>{
+    const field =   await Field.findOne({})
 
 });
 
